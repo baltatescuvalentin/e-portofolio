@@ -9,8 +9,12 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Title from './components/Title';
 
-function App() {
+function scrollToElem() {
   
+}
+
+function App() {
+
   const refArray = useRef<Array<HTMLDivElement | null>>([]);
 
   function scrollToElem(id: number): void {
@@ -33,5 +37,7 @@ function App() {
     </>
   );
 }
-
+export {
+  scrollToElem,
+}
 export default App;
