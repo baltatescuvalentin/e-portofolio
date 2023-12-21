@@ -21,6 +21,14 @@ const skills: ISkill[] = [
         url: "https://img.icons8.com/fluency/48/null/tailwind_css.png",
     },
     {
+        name: 'Sass',
+        url: 'https://img.icons8.com/color/48/sass.png',
+    },
+    {
+        name: 'Express',
+        url: 'https://img.icons8.com/ios/50/express-js.png',
+    },
+    {
         name: 'HTML',
         url: "https://img.icons8.com/fluency/48/null/html-5.png",
     },
