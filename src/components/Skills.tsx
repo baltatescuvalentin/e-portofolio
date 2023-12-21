@@ -18,7 +18,7 @@ function Skills({myref}: any) {
 
 function Tech({name, url}: ISkill) {
     return (
-        <div className='flex flex-col items-center sm:mb-[8px]'>
+        <div className='flex flex-col items-center mb-[8px]'>
             <img className='w-12 h-12' src={url} alt={name} />
             <p className='text-2xl text-center'>{name}</p>
         </div>
