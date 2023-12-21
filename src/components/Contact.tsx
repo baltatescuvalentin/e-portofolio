@@ -1,5 +1,4 @@
 import contact, { IContact } from "../utils/contact";
-import { ElemAsRef } from '../utils/auxInterfaces';
 function Contact({myref}: any) {
 
     let contactMap: JSX.Element[] = contact.map((c, index) => {

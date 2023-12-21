@@ -5,12 +5,16 @@ export interface ISkill {
 
 const skills: ISkill[] = [
     {
-        name: 'JS',
+        name: 'JavaScript',
         url: "https://img.icons8.com/color/48/null/javascript--v1.png"
     },
     {
         name: 'ReactJS',
         url: "https://img.icons8.com/plasticine/100/null/react.png",
+    },
+    {
+        name: 'NextJS',
+        url: "https://img.icons8.com/color/48/nextjs.png"
     },
     {
         name: 'Tailwind CSS',

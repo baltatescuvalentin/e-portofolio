@@ -6,27 +6,27 @@ function Menu({scrollToElem}: ElemAsRefFunc) {
             <div className="flex flex-row justify-center space-x-[24px] sm:[&>*]:h-[32px] sm:[&>*]:w-[32px] &:not(:last-child)]:border-2 &:not(:last-child)]:border-black">
                 <button onClick={() => scrollToElem(0)}
                     className="flex items-center justify-center w-[48px] h-[48px]" title="Home">
-                    <img src="https://img.icons8.com/ios/50/null/home-page.png"/>
+                    <img alt="skill" src="https://img.icons8.com/ios/50/null/home-page.png"/>
                 </button>
                 <button onClick={() => scrollToElem(1)}
                     className="flex items-center justify-center w-[48px] h-[48px]" title="About me">
-                    <img src="https://img.icons8.com/ios/50/null/about.png"/>
+                    <img alt="skill" src="https://img.icons8.com/ios/50/null/about.png"/>
                 </button>
                 <button onClick={() => scrollToElem(2)}
                     className="flex items-center justify-center w-[48px] h-[48px]" title="Experience">
-                    <img src="https://img.icons8.com/ios/50/null/customer-insight--v1.png"/>
+                    <img alt="skill" src="https://img.icons8.com/ios/50/null/customer-insight--v1.png"/>
                 </button>
                 <button onClick={() => scrollToElem(3)}
                     className="flex items-center justify-center w-[48px] h-[48px]" title="Projects">
-                    <img src="https://img.icons8.com/ios/50/null/group-of-projects.png"/>
+                    <img alt="skill" src="https://img.icons8.com/ios/50/null/group-of-projects.png"/>
                 </button>
                 <button onClick={() => scrollToElem(4)}
                     className="flex items-center justify-center w-[48px] h-[48px]" title="Skills">
-                    <img src="https://img.icons8.com/ios/50/null/development-skill.png"/>
+                    <img alt="skill" src="https://img.icons8.com/ios/50/null/development-skill.png"/>
                 </button>
                 <button onClick={() => scrollToElem(5)}
-                    className="flex items-center justify-center w-[48px] h-[48px]" title="Skills">
-                    <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/null/external-contact-communication-nawicon-detailed-outline-nawicon.png"/>
+                    className="flex items-center justify-center w-[48px] h-[48px]" title="Contact">
+                    <img alt="skill" src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/64/null/external-contact-communication-nawicon-detailed-outline-nawicon.png"/>
                 </button>
             </div>
         </div>

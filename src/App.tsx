@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, RefObject } from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';

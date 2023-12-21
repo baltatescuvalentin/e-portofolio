@@ -1,5 +1,3 @@
-import { ElemAsRef } from '../utils/auxInterfaces';
-
 function About({myref}: any) {
 
     let currYear: number = new Date().getFullYear()

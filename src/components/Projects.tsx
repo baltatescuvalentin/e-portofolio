@@ -1,14 +1,10 @@
 import projects from "../utils/projects";
 import Project from "./Project";
-import { ElemAsRef } from '../utils/auxInterfaces';
 function Projects({myref}: any) {
 
     let projs: JSX.Element[] = projects.map((p, index) => {
         return <Project key={index} {...p} />
     })
-
-    let noElems: number = projects.length;
-    const grid: string = `grid-cols-[repeat(${noElems},_350px)]`;
 
     return (
         <div ref={myref}>
@@ -20,6 +16,5 @@ function Projects({myref}: any) {
         </div>
     )
 }
-// grid-cols-[repeat(auto-fit,minmax(350px,1fr))]
-//grid grid-cols-[repeat(7,_350px)] gap-3 sm:gap-0
+
 export default Projects;

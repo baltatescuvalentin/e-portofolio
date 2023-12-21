@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { IoGameControllerOutline } from 'react-icons/io5';
 import { HiOutlineCodeBracket } from 'react-icons/hi2';
 import { GiBrain } from 'react-icons/gi';
-import {ElemAsRef} from '../utils/auxInterfaces';
 interface Carousel {
     text: String,
     emoji: JSX.Element,
@@ -13,6 +12,12 @@ function Title({myref}: any) {
 
     const [current, setCurrent] = useState<number>(0);
 
+    const carousel: Carousel[] = [
+        {text: 'code', emoji: <HiOutlineCodeBracket />},
+        {text: 'learn', emoji: <GiBrain />},
+        {text: 'play', emoji: <IoGameControllerOutline />},
+    ];
+
     useEffect(() => {
         const changeEmoji = setInterval(() => {
             if(current + 1 > carousel.length - 1)
@@ -21,14 +26,7 @@ function Title({myref}: any) {
         }, 3000);
 
         return () => clearInterval(changeEmoji);
-    }, [current]);
-
-
-    const carousel: Carousel[] = [
-        {text: 'code', emoji: <HiOutlineCodeBracket />},
-        {text: 'learn', emoji: <GiBrain />},
-        {text: 'play', emoji: <IoGameControllerOutline />},
-    ];
+    }, [current, carousel.length]);
 
     return (
         <div ref={myref}>
