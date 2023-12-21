@@ -17,7 +17,7 @@ const skills: ISkill[] = [
         url: "https://img.icons8.com/color/48/nextjs.png"
     },
     {
-        name: 'Tailwind CSS',
+        name: 'Tailwind',
         url: "https://img.icons8.com/fluency/48/null/tailwind_css.png",
     },
     {

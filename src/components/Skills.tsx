@@ -9,7 +9,7 @@ function Skills({myref}: any) {
     return (
         <div ref={myref} className="mt-[32px] mb-[32px] font-semibold">
             <p className="text-[32px]">Skills</p>
-            <div className='grid items-center justify-center grid-cols-[repeat(auto-fit,minmax(125px,1fr))] mt-[12px]'>
+            <div className='grid items-center justify-center grid-cols-[repeat(auto-fit,minmax(150px,1fr))] mt-[12px]'>
                 {skillsMap}
             </div>
         </div>
