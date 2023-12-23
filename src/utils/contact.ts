@@ -18,7 +18,7 @@ const contact: IContact[] = [
         emailIcon: "https://img.icons8.com/fluency/48/null/github.png",
     },
     {
-        email: 'bure#9731',
+        email: 'bure9731',
         emailIcon: "https://img.icons8.com/color/48/null/discord-logo.png",
     }
 ]

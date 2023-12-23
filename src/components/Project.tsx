@@ -15,7 +15,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 function Project({name, technologies, description, preview_url, git_url, demo_url}: IProject) {
     return (
-        <div className='flex flex-col flex-shrink-0 justify-between w-[350px] h-[350px] sm:w-[300px] sm:h-[300px] rounded-lg border-4 shadow-lg border-grey-200 p-2 [&>*]:pl-2'>
+        <div className='flex flex-col flex-shrink-0 justify-between w-[350px] h-[350px] sm:w-[320px] sm:h-[300px] rounded-lg border-4 shadow-lg border-grey-200 p-2 [&>*]:pl-2'>
             <p className='text-[24px] font-semibold'>{name}</p>
             <p className='text-[18px]'>{description}</p>
             <p className='text-[18px] font-medium'>{technologies}</p>

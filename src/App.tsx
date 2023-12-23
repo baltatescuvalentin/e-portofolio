@@ -24,7 +24,7 @@ function App() {
   
   return (
     <>
-        <div className="flex flex-col justify-center px-[20%] xl:px-[10%] sm:px-[3%] mt-[50px] mb-[50px]">
+        <div className="flex flex-col justify-center px-[20%] sm:px-[16px] mt-[50px] mb-[50px]">
             <Title myref={(el: HTMLDivElement | null) => refArray.current[0] = el}/>
             <Profile />
             <About myref={(el: HTMLDivElement | null) => refArray.current[1] = el}/>

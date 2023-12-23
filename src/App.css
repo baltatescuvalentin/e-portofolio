@@ -1,3 +1,10 @@
+:root {
+  --time: 40s;
+  --scroll-gap: 4rem;
+  --animation-duration: 40s;
+  --animation-direction: left;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +43,93 @@
     transform: rotate(360deg);
   }
 }
+
+.scroller {
+  max-width: 100%;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--scroll-gap);
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-animated="true"] .scroller__inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - var(--scroll-gap)/2));
+  }
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+/* .scroller {
+  width: 100%;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+
+.scroller__inner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: var(--scroll-gap);
+}
+
+.scroller .scroller__inner {
+  animation: scroll var(--time) linear infinite;
+  animation-delay: calc(var(--time)*-1);
+
+}
+
+.scroller .scroller__inner:nth-child(2) {
+  animation: scroll2 var(--time) linear infinite;
+  animation-delay: calc(var(--time)/-2);
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - var(--scroll-gap)/2));
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-200%);
+  }
+} */

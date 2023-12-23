@@ -30,20 +30,20 @@ function Title({myref}: any) {
 
     return (
         <div ref={myref}>
-            <div className='2xl:[&>p]:text-[54px]'>
-                <p className='text-cyan-300 text-center font-bold text-[154px]'> 
+            <div className='[&>p]:text-[64px] sm:[&>p]:text-[42px]'>
+                <p className='text-cyan-300 text-center font-bold'> 
                     Hi, I'm Valentin
                 </p>
-                <div className='flex flex-row sm:flex-col items-center text-center justify-center 2xl:[&>p]:text-[48px]'>
-                <p className=' text-cyan-300 text-center font-bold text-[154px] '> and I like to {' '}</p>
-                <div className='ml-3 2xl:[&>p]:text-[54px] [&>*]:text-cyan-300 flex flex-row items-center [&>*]:text-center [&>*]:font-bold [&>*]:text-[154px] [&>p]:m-0'>
+                <div className='flex flex-row sm:flex-col items-center text-center justify-center [&>p]:text-[58px] sm:[&>p]:text-[42px]'>
+                    <p className=' text-cyan-300 text-center font-bold '> and I like to {' '}</p>
+                    <div className='ml-3 [&>p]:text-[64px] [&>*]:text-cyan-300 flex flex-row items-center [&>*]:text-center [&>*]:font-bold [&>p]:m-0'>
                         <p>
                             { carousel[current].text}
                         </p> 
                         <p>
                             {carousel[current].emoji}
                         </p>
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
