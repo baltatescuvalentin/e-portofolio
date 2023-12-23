@@ -1,11 +1,7 @@
 import { useEffect } from 'react';
 import skills from '../utils/skills';
-import { ISkill } from '../utils/skills';
 function Skills({myref}: any) {
 
-    let skillsMap = skills.map((s, index) => {
-        return <Tech key={index} {...s} />
-    });
     let logosMap = skills.map((s, index) => {
         return (
             <div key={index} className='flex flex-col items-center shrink-0'>
@@ -63,16 +59,6 @@ function Skills({myref}: any) {
                 </div>
             </div>
         </div>
-    )
-}
-
-function Tech({name, url}: ISkill) {
-    return (
-        <div className='flex flex-col items-center mb-[8px] shrink-0'>
-            <img className='w-14 h-14' src={url} alt={name} />
-            <p className='text-2xl text-center'>{name}</p>
-        </div>
-
     )
 }
 
