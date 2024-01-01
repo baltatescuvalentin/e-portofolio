@@ -18,7 +18,7 @@ function Skills({myref}: any) {
     });
 
     // var copy = document.querySelector(".scroller_inner").cloneNode(true);
-    // document.querySelector(".scroller").appendChild(copy);\
+    // document.querySelector(".scroller").appendChild(copy);
     const copyScroll = (mainDiv: string, secondDiv: string) => {
         const scrollerInner = document.querySelector(`.${secondDiv}`) as HTMLElement | null;
         const scroller = document.querySelector(`.${mainDiv}`) as HTMLElement | null;
@@ -40,14 +40,10 @@ function Skills({myref}: any) {
         copyScroll('scroller1', 'scroller__inner1');
         copyScroll('scroller2', 'scroller__inner2');
     }, []);
-    //const style = { "--_animation-duration": 40, '--animation-direction': 'right' } as React.CSSProperties;
 
     return (
         <div ref={myref} className="mt-[32px] font-semibold">
             <p className="text-[32px]">Skills</p>
-            {/* <div className='grid items-center justify-center grid-cols-[repeat(auto-fit,minmax(150px,1fr))] mt-[12px]'>
-                {skillsMap}
-            </div> */}
             <div className='scroller1 scroller mt-[12px]' data-direction="left">
                 <div className='scroller__inner1 scroller__inner'>
                     {logosMap}
