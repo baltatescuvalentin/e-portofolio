@@ -1,3 +1,5 @@
+import CV from '../utils/CV.pdf';
+
 function Experience({myref}: any) {
     return (
         <div ref={myref} className="mt-[32px]">
@@ -14,6 +16,12 @@ function Experience({myref}: any) {
                   APIs, use 3rd party tools as back-end, create intuitive and maintainable UIs, getting a grasp of 
                   how these tecnologies work alone and together.
             </p>
+            <div className='mt-6'>
+                <a className='p-2 text-2xl border-2 border-cyan-500 rounded-md text-cyan-700 shadow-md' href={CV} download="CV_Baltatescu_Valentin_Constantin" target='_blank'>
+                    Curriculum Vitae
+                </a>
+            </div>
+            
         </div>
     )
 }
